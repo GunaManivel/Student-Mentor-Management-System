@@ -34,11 +34,14 @@ app.get("/", (req, res) => {
           color: #333;
           margin: 0;
           padding: 0;
+         
         }
         .container {
           max-width: 800px;
           margin: 50px auto;
           padding: 20px;
+          
+          box-sizing: border-box;
           background-color: #fff;
           border-radius: 8px;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -52,12 +55,13 @@ app.get("/", (req, res) => {
           margin-bottom: 10px;
         }
         ul {
-          list-style-type: none;
+          list-style-type: circle;
           padding: 0;
           text-align: left;
         }
         li {
           margin-bottom: 10px;
+          padding-left:10px;
         }
       </style>
     </head>
@@ -66,13 +70,14 @@ app.get("/", (req, res) => {
         <h2>Welcome to the Mentor-Student Management System API!</h2>
         <h3>API Endpoints :</h3>
         <ul><br/>
-          <li style="list-style:Numbers;">POST /mentors/create: Create a new mentor.</li><br/>
-          <li style="list-style:Numbers;">POST /students/create: Create a new student.</li><br/>
-          <li style="list-style:Numbers;">POST /students/assign-mentor: Assign a student to a mentor.</li><br/>
-          <li style="list-style:Numbers;">PUT /students/change-mentor/:studentId: Change the mentor for a student.</li><br/>
-          <li style="list-style:Numbers;">GET /mentors/:mentorId/students: Get all students for a particular mentor.</li><br/>
-          <li style="list-style:Numbers;">GET /students/:studentId/previous-mentor: Get the previous mentor for a particular student.</li><br/>
+          <li>POST /mentors/create: Create a new mentor.</li><br/>
+          <li >POST /students/create: Create a new student.</li><br/>
+          <li >POST /students/assign-mentor: Assign a student to a mentor.</li><br/>
+          <li >PUT /students/change-mentor/:studentId: Change the mentor for a student.</li><br/>
+          <li>GET /mentors/:mentorId/students: Get all students for a particular mentor.</li><br/>
+          <li >GET /students/:studentId/previous-mentor: Get the previous mentor for a particular student.</li><br/>
         </ul>
+         <p>For more details, please refer to the <a href="https://documenter.getpostman.com/view/31934300/2sA35A75Ck">API documentation</a>.</p>
       </div>
     </body>
     </html>

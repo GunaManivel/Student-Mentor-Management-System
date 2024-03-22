@@ -88,3 +88,5 @@ Contributions are welcome! Feel free to open issues or pull requests for any imp
 ## License :
 
 This project is licensed under the MIT License.
+
+API Documentation Available at https://documenter.getpostman.com/view/31934300/2sA35A75Ck
